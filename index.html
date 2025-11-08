@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitchell Leslie - Portfolio</title>
+    <title>Leslie Interactive - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/Icon.ico" type="image/x-icon">
 </head>
-<body>
+<body class="homepage">
     <!-- Header / Navbar -->
     <header>
         <nav class="navbar">
-            <h1 class="logo">Mitchell Leslie</h1>
-            <p1>Mechanics & Level Programmer</p1>
+            <img src="../assets/Logo.png" class="logo">
+            <p1>Mechanics And Level Programmer</p1>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -23,7 +23,7 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2>Hi, I'm Mitchell 👋</h2>
+        <h2 style="margin-top: 100px;">Hi, I'm Mitchell 👋</h2>
         <p>A game developer that utilises the Unity Game Engine to make small prototypes for GameJams and personal projects.</p>
         <a href="#projects" class="btn">View My Work</a>
     </section>
@@ -59,6 +59,7 @@
                   <p>Engine: Unity</p>
                   <p>Platform: Windows</p>
                   <a href="https://755958-cheese.itch.io/together-everywhere-healthy-life" class="btn-play">Play here!</a>
+                  <a class="btn-info" href="pages/tehl.html">Info</a>
                 </div>
               </div>
             
@@ -70,6 +71,7 @@
                   <p>Engine: Unity</p>
                   <p>Platform: Browser</p>
                   <a href="https://755958-cheese.itch.io/glide-home" class="btn-play">Play here!</a>
+                  <a class="btn-info" href="pages/glidehome.html">Info</a>
                 </div>
               </div>
               <div class="project-card">
@@ -80,6 +82,7 @@
                   <p>Engine: Unity</p>
                   <p>Platform: Windows</p>
                   <a href="https://kluckings.itch.io/deep-clean" class="btn-play">Play here!</a>
+                  <a class="btn-info" href="pages/deepclean.html">Info</a>
                 </div>
               </div>
               <div class="project-card">
@@ -90,16 +93,18 @@
                   <p>Engine: Unity</p>
                   <p>Platform: Windows</p>
                   <a href="https://kluckings.itch.io/tunnelofdespair" class="btn-play">Play here!</a>
+                  <a class="btn-info" href="pages/tunnels.html">Info</a>
                 </div>  
               </div>
               <div class="project-card">
-                <img src="assets/Logo.png" alt="Glide Home icon">
+                <img src="assets/SP.png" alt="Glide Home icon">
                 <div class="project-info">
                   <h3>Solo Project!</h3>
                   <p>A 2D Game about being mad at your lecturer for giving you a Solo Project!</p>
                   <p>Engine: Unity</p>
                   <p>Platform: Windows</p>
                   <a href="https://kluckings.itch.io/soloproject" class="btn-play">Play here!</a>
+                  <a class="btn-info" href="pages/sp.html">Info</a>
                 </div>  
               </div>
         </div>
@@ -110,7 +115,7 @@
         <h2>Contact</h2>
         <p>Feel free to reach out via email or contact me on Discord.</p>
         <p style="font-size: 14px; padding-top: 20px; color: rgb(122, 118, 187); font-weight: bold;">Discord: kluckytransport</p>
-        <a href="mailto:kluckybusiness@gmail.com" class="btn">Email Me</a>
+        <a href="mailto:mitchellleslie09@gmail.com" class="btn">Email Me</a>
     </section>
 
     <section id="connections" class="connections">
@@ -118,12 +123,11 @@
         <a href="https://www.flickr.com/photos/201925316@N08"><i class="fa-brands fa-flickr"></i></a>
         <a href="https://kluckings.itch.io/"><i class="fa-brands fa-itch-io"></i></i></a>
         <a href="https://youtube.com/@kluckytransport"><i class="fa-brands fa-youtube"></i></i></a>
-        <a href="https://www.linkedin.com/in/mitchell-leslie-6143142b4/"><i class="fa-brands fa-linkedin"></i></i></a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Mitchell Leslie. All rights reserved.</p>
+        <p>&copy; 2025 Leslie Interactive. All rights reserved.</p>
     </footer>
 </body>
 
@@ -133,7 +137,8 @@ const images = [
   "assets/TEHL.png",
   "assets/GlideHome.png",
   "assets/DC.png",
-  "assets/TOD.png"
+  "assets/TOD.png",
+  "assets/SP.png"
 ];
 
 let currentIndex = 0;
@@ -173,7 +178,7 @@ function updateSlide() {
   }, 800);
 }
 
-let intervalId = setInterval(nextSlide, 4000);
+let intervalId = setInterval(nextSlide, 2500);
 
 function nextSlide() {
   currentIndex = (currentIndex + 1) % images.length;
@@ -191,5 +196,3 @@ createDots();
 </script>
 
 </html>
-
-
