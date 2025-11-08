@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Geova';
+  src: url('fonts/GeovaTrial-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geova';
+  src: url('fonts/GeovaTrial-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
@@ -12,7 +26,7 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Geova', sans-serif;
     line-height: 1.6;
     color: #e4e4e4;
     background-color: #121212;
@@ -35,8 +49,8 @@ header {
 }
 
 .logo {
-    font-size: 1.5rem;
-    color: #9b5de5; /* Purple accent */
+  width: 200px;      /* scale down width */
+  height: auto;      /* keep correct aspect ratio */
 }
 
 .nav-links {
@@ -58,7 +72,7 @@ header {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 5rem 2rem;
+    padding: 1rem 0.1rem;
     color: #fff;
 }
 
@@ -77,7 +91,8 @@ header {
     margin-top: 1rem;
     background: #9b5de5;   /* purple theme */
     color: #fff;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 2rem;
+    margin-bottom: 40px;
     border-radius: 25px;
     text-decoration: none;
     transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
@@ -100,7 +115,7 @@ section {
 h2 {
     margin-bottom: 1.5rem;
     text-align: center;
-    color: #9b5de5;
+    color: #bd9ae7;
 }
 
 /* Projects */
@@ -185,6 +200,27 @@ footer {
     outline-offset: 0.2px;          /* push it slightly outward */
 }
 
+.btn-info {
+    display: inline-block;
+    margin-top: 0.75rem;   /* adds space above button */
+    padding: 0.4rem 0.9rem;
+    background: linear-gradient(135deg, #0099c8, #5996ff);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+}
+
+.btn-info:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 8px rgba(0, 153, 200, 0.5);
+    outline: 2px solid #004a5a;   /* visible outline */
+    outline-offset: 0.2px;          /* push it slightly outward */
+}
+
 .btn-play-unavail {
     display: inline-block;
     margin-top: 0.75rem;   /* adds space above button */
@@ -221,7 +257,7 @@ footer {
 
 .connections a {
     text-decoration: none;
-    color: #9b5de5;
+    color: #be99eb;
 }
 
 .about-slideshow-container {
@@ -238,6 +274,7 @@ footer {
 .slideshow {
   flex: 1;
   max-width: 500px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;    /* stack children vertically */
   align-items: center;       /* center horizontally */
@@ -275,4 +312,89 @@ footer {
   box-shadow: 0 0 6px #7b3fbf;
 }
 
+.about-game {
+  max-width: 600px;
+  margin: -100px auto 0;  
+  line-height: 1.6;
+  font-size: 16px;
+  color: #ddd;
+  text-align: center;
+  padding: 30px;
+}
 
+.about-section {
+    text-align: center;
+}
+
+.screenshots {
+  flex: 1 1 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.screenshots img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.screenshots img:hover {
+  transform: scale(1.01);
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .screenshots {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+.offers-section {
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.glide-home-page {
+  background-image: url(assets/checker.png);
+  background-blend-mode: overlay;
+}
+
+.GlideHomeAbout {
+  box-shadow: 0 0 50px #ffffff42; 
+  margin-top: 40px;
+  border: 1px solid #646161;
+  box-sizing: border-box;     
+  border-radius: 18px;
+  background-color: #121212c5;
+}
+
+.deep-clean-homepage {
+  background-image: url(assets/bubbles.png);
+  background-repeat: repeat;
+}
+
+.homepage {
+  background-image: url(assets/Mosai.png);
+  background-size: cover;
+}
+
+.tod-homepage {
+  background-image: url(assets/BusBG.png);
+  background-size: contain;
+}
+
+.sp-homepage {
+  background-image: url(assets/SPBG.png);
+  background-size: cover;
+}
+
+.TEHLBG {
+  background-image: url(assets/TEHLBG.png);
+  background-repeat: repeat;
+}
