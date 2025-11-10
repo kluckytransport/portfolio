@@ -49,7 +49,7 @@ header {
 }
 
 .logo {
-  width: 200px;      /* scale down width */
+  width: 80px;      /* scale down width */
   height: auto;      /* keep correct aspect ratio */
 }
 
