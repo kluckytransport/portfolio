@@ -3,4 +3,4 @@
 </p>
 
 <h1 align="center">Subagent's Portfolio</h1>
-Hosted by GitHub Pages
+<p align="center">Hosted by GitHub Pages</p>
