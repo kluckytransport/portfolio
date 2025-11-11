@@ -86,6 +86,7 @@ header {
     text-align: center;
     padding: 1rem 0.1rem;
     color: #fff;
+    overflow: visible;
 }
 
 .hero h2 {
@@ -408,4 +409,5 @@ footer {
 .TEHLBG {
   background-image: url(assets/TEHLBG.png);
   background-repeat: repeat;
+
 }
