@@ -1,2 +1,6 @@
-# <img src="assets/Logo.png" style="width: 200px; height: auto;"><h1 style="font-size="2rem">Subagent's Portfolio<h1>
+<p align="center">
+  <img src="assets/Logo.png" width="200">
+</p>
+
+<h1 align="center">Subagent's Portfolio</h1>
 Hosted by GitHub Pages
