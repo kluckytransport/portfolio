@@ -2,4 +2,4 @@
   <img src="assets/readme/TitleText.png" width="1000">
 </div>
 
-<p1 align="center">Hosted by Github Pages</p1>
+<p align="center">Hosted by GitHub Pages</p>
