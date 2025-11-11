@@ -44,28 +44,40 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 80px;
 }
 
-.logo {
-  width: 80px;      /* scale down width */
-  height: auto;      /* keep correct aspect ratio */
+/* Left logo */
+.navbar .logo {
+    position: absolute;
+    left: 20px;
+    width: 100px;
+    height: auto;
 }
 
-.nav-links {
-    list-style: none;
+/* Right links */
+.navbar .links {
+    position: absolute;
+    right: 20px;
     display: flex;
-    gap: 1.5rem;
+    gap: 20px;
 }
 
-.nav-links a {
+/* Center text */
+.navbar .title {
+    text-align: center;
+}
+
+.navbar .links a {
     text-decoration: none;
     color: #e4e4e4;
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.navbar .links a:hover {
     color: #9b5de5;
 }
 
