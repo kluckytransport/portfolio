@@ -127,7 +127,7 @@ section {
 h2 {
     margin-bottom: 1.5rem;
     text-align: center;
-    color: #bd9ae7;
+    color: #d3b0f4;
 }
 
 /* Projects */
@@ -153,7 +153,7 @@ h2 {
     width: 60px;
     height: 60px;
     border-radius: 50%;   /* makes it round */
-    object-fit: cover;    /* ensures it fills circle */
+    object-fit: contain;    /* ensures it fills circle */
     flex-shrink: 0;       /* prevents squishing */
 }
 
@@ -285,8 +285,7 @@ footer {
 
 .slideshow {
   flex: 1;
-  max-width: 500px;
-  margin-top: 30px;
+  width: 100%;
   display: flex;
   flex-direction: column;    /* stack children vertically */
   align-items: center;       /* center horizontally */
@@ -294,7 +293,7 @@ footer {
 
 .slideshow img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 8px;
   object-fit: cover;
 
