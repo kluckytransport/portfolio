@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Subagent's Portfolio - Tunnels of Despair</title>
+    <title>The Subagent's Portfolio- Tunnels of Despair</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../assets/Icon.ico" type="image/x-icon">
 </head>
@@ -32,52 +32,17 @@
           Will you outsmart The Spoofen, or will you become its latest victim?
         </div>
           <div class="screenshots">
-              <a href="../assets/screenshot/TOD/Menu.png" class="project-link"><img src="../assets/screenshot/TOD/Menu.png " alt=""></a>
+              <img src="../assets/screenshot/TOD/Menu.png " alt=""></a>
               <img src="../assets/screenshot/TOD/Fix.png" alt="">
               <img src="../assets/screenshot/TOD/Bus.png" alt="">
               <img src="../assets/screenshot/TOD/Spoofen.png" alt="">
               <img src="../assets/screenshot/TOD/Wheel.png" alt="">
           </div>
-        <div id="popup" class="popup">
-            <div class="popup-content">
-            <span class="close-btn">&times;</span>
-            <iframe id="popup-iframe" src="" frameborder="0"></iframe>
-        </div>
 </div>
           
           <footer>
         <p>&copy; 2025 Subagent. All rights reserved.</p>
     </footer>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const popup = document.getElementById("popup");
-  const iframe = document.getElementById("popup-iframe");
-  const closeBtn = document.querySelector(".close-btn");
-
-  // Replace all project links with popup behavior
-  document.querySelectorAll(".project-card a, .links a.project-link").forEach(link => {
-    link.addEventListener("click", e => {
-      e.preventDefault();
-      iframe.src = link.href; // load that page in the iframe
-      popup.style.display = "flex";
-      setTimeout(() => popup.classList.add("show"), 10); // smooth animation
-    });
-  });
-
-  closeBtn.addEventListener("click", () => {
-    popup.classList.remove("show");
-    setTimeout(() => {
-      popup.style.display = "none";
-      iframe.src = "";
-    }, 300);
-  });
-
-  popup.addEventListener("click", e => {
-    if (e.target === popup) closeBtn.click(); // click outside to close
-  });
-});
-</script>
 
 </body>
 </html>
